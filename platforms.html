@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ta'lim Platformalari - Platformalar ro'yxati</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      color: #00b074 !important;
+      font-size: 1.5rem;
+    }
+    .nav-link {
+      font-weight: 600;
+      color: #343a40;
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover,
+    .nav-link.active {
+      color: #00b074;
+    }
+    .container {
+      max-width: 1100px;
+    }
+    h1 {
+      font-weight: 700;
+      color: #00b074;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .platform-card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0, 176, 116, 0.15);
+      margin-bottom: 2.5rem;
+      padding: 1.8rem 2rem;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .platform-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0, 176, 116, 0.3);
+    }
+    .platform-title {
+      color: #00b074;
+      font-weight: 700;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    .platform-description {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .steps-list {
+      list-style: decimal inside;
+      padding-left: 1rem;
+      color: #343a40;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    .platform-link {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 0.5rem 1.3rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      width: max-content;
+    }
+    .platform-link:hover {
+      background-color: #0056b3;
+      text-decoration: none;
+    }
+    footer {
+      background-color: #343a40;
+      color: #adb5bd;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      margin-top: auto;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .platform-card {
+        padding: 1.5rem 1rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav
+    class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    aria-label="Main navigation"
+  >
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Ta'lim Platformalari</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Bosh sahifa</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Biz haqimizda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="platforms.html">Platformalar</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Aloqa</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page heading -->
+  <main class="container">
+    <h1>Eng mashhur ta'lim platformalari</h1>
+
+    <!-- Platform 1: Coursera -->
+    <article class="platform-card">
+      <h2 class="platform-title">Coursera</h2>
+      <div class="video-wrapper">
+        <iframe width="852" height="480" src="https://www.youtube.com/embed/qnz6b58A75s" title="Coursera.org saytidan ro&#39;yxatdan o&#39;tish | Cоурсера.орг сайтидан рўйхатдан ўтиш" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="platform-description">
+        Coursera – dunyodagi eng yirik onlayn ta’lim platformalaridan biri. Bu yerda universitet kurslari, kasbiy sertifikatlar va mutaxassislik dasturlarini topishingiz mumkin.
+      </p>
+      <h3>Foydalanish qadamlar:</h3>
+      <ol class="steps-list">
+        <li>Ro’yxatdan o’ting yoki tizimga kiring.</li>
+        <li>O‘zingizga qiziqqan kursni tanlang.</li>
+        <li>Video darslarni tomosha qiling va topshiriqlarni bajaring.</li>
+        <li>Imtihonlardan o‘ting va sertifikat oling.</li>
+      </ol>
+      <a
+        href="https://www.coursera.org"
+         
+        rel="noopener noreferrer"
+        class="platform-link"
+        >Coursera saytiga o'tish</a
+      >
+    </article>
+
+    <!-- Platform 2: Udemy -->
+    <article class="platform-card">
+      <h2 class="platform-title">Udemy</h2>
+      <div class="video-wrapper">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/suv0pavwpQE" title="How to Download Udemy Courses in PC (Udemy Courses)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="platform-description">
+        Udemy – kasbiy va shaxsiy rivojlanish uchun yuz minglab kurslarni taklif etuvchi platforma. Kurslar har doim yangilanadi va turli mavzularda mavjud.
+				<br>
+				<b>Faqat ingliz tilida</b>
+      </p>
+      <h3>Foydalanish qadamlar:</h3>
+      <ol class="steps-list">
+        <li>Hisob yarating va tizimga kiring.</li>
+        <li>Kursni tanlab xarid qiling yoki bepul kurslarni o‘rganing.</li>
+        <li>Video materiallarni ko‘rib chiqing va topshiriqlarni bajaring.</li>
+        <li>O‘zingizni rivojlantiring va sertifikat oling.</li>
+      </ol>
+      <a
+        href="https://www.udemy.com"
+         
+        rel="noopener noreferrer"
+        class="platform-link"
+        >Udemy saytiga o'tish</a
+      >
+    </article>
+
+    <!-- Platform 3: Khan Academy -->
+    <article class="platform-card">
+      <h2 class="platform-title">Khan Academy</h2>
+      <div class="video-wrapper">
+        <iframe width="851" height="480" src="https://www.youtube.com/embed/u5oGqzo0JoE" title="Ho‘sh Khan Academy O‘zbek platformasi kimlar uchun va undan qanday foydalanish mumkin?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="platform-description">
+        Khan Academy – barcha yoshdagi o‘quvchilar uchun bepul ta’lim platformasi. Matematika, fanlar, tarix va boshqa ko‘plab fanlardan video darslar mavjud.
+      </p>
+      <h3>Foydalanish qadamlar:</h3>
+      <ol class="steps-list">
+        <li>Hisob yarating yoki tizimga kiring.</li>
+        <li>Fan va mavzuni tanlang.</li>
+        <li>Video darslarni tomosha qiling va mashqlarni bajaring.</li>
+        <li>O‘z bilim darajangizni oshiring.</li>
+      </ol>
+      <a
+        href="https://www.khanacademy.org"
+         
+        rel="noopener noreferrer"
+        class="platform-link"
+        >Khan Academy saytiga o'tish</a
+      >
+    </article>
+
+    <!-- Platform 4: edX -->
+    <article class="platform-card">
+      <h2 class="platform-title">edX</h2>
+      <div class="video-wrapper">
+        <img width="100%" height="300" src="./assets/images/edx_img.png" alt="edx">
+      </div>
+      <p class="platform-description">
+        edX – dunyodagi yetakchi universitetlarning onlayn kurslarini taqdim etuvchi platforma. Siz o‘z vaqtingizda o‘rganishingiz mumkin bo‘lgan ko‘plab fanlar bor.
+      </p>
+      <h3>Foydalanish qadamlar:</h3>
+      <ol class="steps-list">
+        <li>Ro’yxatdan o’ting.</li>
+        <li>O‘zingizga qiziqqan kursni tanlang.</li>
+        <li>Materiallarni o‘rganing va topshiriqlarni bajaring.</li>
+        <li>Sertifikat olish uchun imtihonlardan o‘ting.</li>
+      </ol>
+      <a
+        href="https://www.edx.org"
+         
+        rel="noopener noreferrer"
+        class="platform-link"
+        >edX saytiga o'tish</a
+      >
+    </article>
+
+    <!-- Platform 5: LinkedIn Learning -->
+    <article class="platform-card">
+      <h2 class="platform-title">LinkedIn Learning</h2>
+      <div class="video-wrapper">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/okyTiBrGF78" title="Linkedin o&#39;zi nima va u nega muhim? Linkedindan foydalanish bo&#39;yicha tavsiyalar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="platform-description">
+        LinkedIn Learning professional rivojlanish uchun maxsus yaratilgan platforma bo‘lib, biznes, texnologiya va kreativ sohalarda kurslar taklif etadi.
+      </p>
+      <h3>Foydalanish qadamlar:</h3>
+      <ol class="steps-list">
+        <li>Hisob yarating va tizimga kiring.</li>
+        <li>Kursni tanlang.</li>
+        <li>Video va materiallarni ko‘rib chiqing.</li>
+        <li>O‘z ko‘nikmalaringizni rivojlantiring va sertifikat oling.</li>
+      </ol>
+      <a
+        href="https://www.linkedin.com/learning"
+         
+        rel="noopener noreferrer"
+        class="platform-link"
+        >LinkedIn Learning saytiga o'tish</a
+      >
+    </article>
+
+    <!-- Platform 6: Skillshare -->
+    <article class="platform-card">
+      <h2 class="platform-title">Skillshare</h2>
+      <div class="video-wrapper">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/Q9iXvMlPVog" title="How To Start Using Skillshare 2025! (Full Beginners Guide)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="platform-description">
+        Skillshare ijodiy va texnik sohalar bo‘yicha kurslar taklif etadi. Bu platformada dizayn, fotografiya, dasturlash va boshqa ko‘plab yo‘nalishlar mavjud.
+      </p>
+      <h3>Foydalanish qadamlar:</h3>
+      <ol class="steps-list">
+        <li>Hisob yarating.</li>
+        <li>Kursni tanlab o‘rganishni boshlang.</li>
+        <li>Video darslarni tomosha qiling va loyihalar ustida ishlang.</li>
+        <li>O‘z ko‘nikmalaringizni oshiring.</li>
+      </ol>
+      <a
+        href="https://www.skillshare.com"
+         
+        rel="noopener noreferrer"
+        class="platform-link"
+        >Skillshare saytiga o'tish</a
+      >
+    </article>
+  </main>
+
+  <footer>
+    © 2025 Ta'lim Platformalari. 
+  </footer>
+
+  <!-- Bootstrap JS Bundle (Popper + Bootstrap) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
